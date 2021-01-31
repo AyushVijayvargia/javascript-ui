@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Get input from user</title>
+        <script type = "text/javascript">
+        
+        function userPassCheck()
+        {
+            var name = document.getElementById("name").value;
+            var password = document.getElementById("password").value;
+
+            if(name.localeCompare(password)==0)
+            {
+                alert("Name and password matched");
+            }
+            else
+            {
+                alert("Name and password DID NOT matched");
+            }
+
+        }
+        </script>
+    </head>
+        <body>
+            <input id = "name" placeholder="username">
+            <br>
+            <input type = "password" id = "password" "name" placeholder="password">
+            <button onclick="userPassCheck()" id = "btn"> CLICK ME </button>
+        </body>
+</html>
