@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<title> my first javascript project </title>
+		
+	</head>
+
+	<body>
+	</body>
+</html>
+<script type="text/javascript">
+			// this is comment (same as java )
+			document.write("<h1>Hello World, this is a statement</h1>");
+			var num=20;
+			num= "this variable is string now, changed from number";// dynamically typed-- type changed from num to string automatically
+			var number = 10;
+			document.write("loosely typed(dont specify datatype initially) and dynamically typed-- datatype changes as per values passed "+num);
+
+			if(number%2==0)
+			{
+				document.write("<h2> if block check - number is divisible by 2</h2>");
+
+			}
+			//alert(num);
+			for(var i=0;i<2;i++)
+			{
+				document.write("<h2>"+"inside for loop :"+(5*i) +"</h2>")
+			}
+			// void function
+			function addNumbers(a,b) 
+			{
+				document.write("<h2>"+ "Sum of numbers is by a function call "+(a+b) +"</h2>")	;
+			}
+			addNumbers(2,3);
+			// return function no type in function
+			function addNumbersReturn(a,b) 
+			{
+				var c =10; // this is local variable
+				return a+b;
+			}
+			var c = addNumbersReturn(3,3);
+			document.write("<h2>"+ "Sum of numbers is by value returned by function "+(c) +"</h2>")	
+
+</script>
